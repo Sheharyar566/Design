@@ -8,10 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        lora: ["var(--font-lora)"],
+        quicksand: ["var(--font-quicksand)"],
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "home-page": `linear-gradient(180deg, #0f172a44 0%, #0f172a88 80%, #0f172a 95%, #0f172a 100%), url(/images/bg.jpg)`,
+        gradient:
+          "linear-gradient(360deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 0.75) 50%, hsla(207, 41%, 27%, 0.5) 100%)",
+      },
+      colors: {
+        primary: "#ffb199",
+        secondary: "#0f172a",
       },
     },
   },
